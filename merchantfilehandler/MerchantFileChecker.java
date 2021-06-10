@@ -12,8 +12,8 @@ public  class MerchantFileChecker implements  Runnable{
     MerchantFileHandler merchantFileHandler;
 
     final double FILE_SIZE = 999900;//chnage file size
-    final String OFO="OFO";
-    final String MIF="MIF";
+    final String OFO="OFFLINE";
+    final String MIF="MMFILE";
 
     private DateTimeFormatter formatter ;
     private String today;
@@ -40,7 +40,7 @@ public  class MerchantFileChecker implements  Runnable{
     public void run() {
         int i=0;
         int fileBatchId=0;
-        //OFO21040151MIF_00010344.csv  _Member IIN
+   
         for (MerchantInformation tmerchantInformation:merchantInformations){
 
             File file = new File(fileName);
