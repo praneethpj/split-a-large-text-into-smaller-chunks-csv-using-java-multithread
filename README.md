@@ -1,6 +1,10 @@
 # split-a-large-text-into-smaller-chunks-csv-using-java-multithread
 How to split a large text into smaller chunks csv using java multithread with chunk file limiting the size
 
+Chnage the following in MerchantFileChecker,
+
+FILE_SIZE = 999900; 
+path="YOUR_PATH";
 
 
 References:
